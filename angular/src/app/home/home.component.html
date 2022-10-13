@@ -1,0 +1,11 @@
+<h2>{{headername | lowercase}}</h2>
+<h2 *ngIf="salary>0" [ngClass]="classname">My Salary is {{salary | currency: 'INR'}}</h2>
+
+<button (click)="FunctionClick('click here')"> Click Me!</button>
+<input [value]="isdiabled" [disabled]="isdiabled" #txt (change)="FunctionClick(txt.value)">
+<br>
+<input [(ngModel)]="headername">
+<br>
+<ul>
+    <li *ngFor="let x of animals">My {{x}}</li>
+</ul>
